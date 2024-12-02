@@ -53,67 +53,72 @@
 				<h3><b>Menu</b></h3>
 
 				<br>
-
-				<a href="#r1">R1</a>
+				Music
 				<br>
-				<a href="#r2">R2</a>
+				<a href="#m1">M1--Music hierarchical analysis</a>
 				<br>
-				<a href="#r3">R3</a>
+				<a href="#m2">M2--Music performance evaluation</a>
 				<br>
-				<a href="#r4">R4</a>
+				Video
 				<br>
-				<a href="#r5">R5</a>
+				<a href="#r3">V1--Video content understanding</a>
 				<br>
-				<a href="#r6">R6</a>
-
+				<a href="#r4">V2--Video teaser generation</a>
+	
 			</div>
-			<div class="box" id="r1">
-				<h3><b>R1--Singing synthesizing model</b></h3>
+			<div class="box" id="m1">
+				<h3><b>M1--Music hierarchical analysis</b></h3>
 				<p>
-					I want to
-					<br>
+					For a whole music piece, we want to cluster the music in similar rhythm pattern, emotion, and speed, thus breaking it
+					into a few parts. The shorter music segments will have more accurate results in chord recognition, transcription, beat
+					extraction, etc. The information from audio like intensity, tune, beats could combine well with the information from
+					symbolic like melody, chords, arrangements. I am confident that having those representations together with the help of
+					the large language model will make the best results of music analysis, hence we can understand the music by parts,
+					measures, and even notes.
+					
 				</p>
 			</div>
 
-			<div class="box" id="r2">
-				<h3><b>R2--A specific Scoring System for Chinese folk music </b></h3>
+			<div class="box" id="m2">
+				<h3><b>M2--Music performance evaluation </b></h3>
 				<p>
-					I want to design
-					<br>
-					<br>
+					For the music performance in the same genre, the distribution for pitch correctness, intensity variations and beat
+					patterns share lots of common features. As long as we can do comparisons under the correct representations, it will be
+					easy to find out how close the performance is with the references in different levels. The current industry field are
+					still working on the standards based on notes. However, the importance of different notes varies according to the
+					content, which current solutions does not consider. I want to establish a music performance evaluation system based on
+					sentences or the whole music pieces, instead of each note. Currently there are a few data available for the performances
+					under experts’ evaluations, which can be used for feedback control of tuning.
 				</p>
 			</div>
 
-			<div class="box" id="r3">
-				<h3><b>R3</b></h3>
+			<div class="box" id="v1">
+				<h3><b>V1--Video content understanding</b></h3>
 				<p>
-					There should be
-					<br>
+					Videos include lots of elements. For audio signals, there are dialogues, background music, noises, sound effects and
+					silence. For vision signals, there are scenes, objects and motions. It is a challenging task to find out the exact
+					timings for all the audio-visual related incidents. Currently, there does not exist enough data with labels for all the
+					possible critical events included in the video. To this end, I propose to generate pseudo-labels using other audio and
+					video analysis approaches. Then, it is possible that the language model could generate more accurate predictions of the
+					video contents by combining the information from audios and images. With the small datasets labeled by human experts, it
+					is also possible to fine-tune the results and improve the accuracies.
 				</p>
 			</div>
 
-			<div class="box" id="r4">
-				<h3><b>R4</b></h3>
+			<div class="box" id="v2">
+				<h3><b>V2--Video teaser generation</b></h3>
 				<p>
-					The existing
-					<br>
+					We have the experience that the trailer includes most eye-catching scenes of the movie, and the whole one played in the
+					theatre might not have any stimulating moments for a while. To generate a teaser that stimulates our nerves frequently,
+					we want to detect all those exciting frames out of the whole video and rearrange them logically. To this end, I believe
+					that we can first analyze the key contents in the video, and then disentangle the scenes to make them understandable.
+					Finally, we could rearrange those fragments into a concentrated short story and keep most interesting information within
+					the original full piece. For the music, keeping the same one from the original video is much better than any music from
+					templates or generation. We can extract the music and audio together with the related images, keeping them with suitable
+					transitions into the final teaser.
 				</p>
 			</div>
 
-			<div class="box" id="r5">
-				<h3><b>R5</b></h3>
-				<p>
-					We can give
-					<br>
-				</p>
-			</div>
-
-			<div class="box" id="r6">
-				<h3><b>R6</b></h3>
-
-				<p>
-					For beginners in
-				</p>
 
 
 
