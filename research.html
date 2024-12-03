@@ -124,13 +124,46 @@
 						<p>
 						In 2024, I completed another internship at clearmotion.inc, where I created an in-vehicle
 						infotainment system that can automatically perform vehicle chassis movements according to videos played on the phone.
-						This internship experience allowed me to  explore more on multi-model systems in information retrieval.  To begin with,
-						I built up an event detection system to capture interesting scenes from the audio-visual signals. Moreover, I applied
-						the beat tracking algorithm to analyze the background music in the video. Finally, I combined these information sources
-						such that the chairs in the vehicle could move and shake properly when the passengers were watching videos. This
-						internship helped me establish a better understanding of multimedia signals, and the deployment of the system to a real
-						vehicle has greatly improved my programming skills. Although this internship is already completed, I’m still working
-						with my manager to apply for a patent for my infotainment system. 
+						This is the most meaningful research experience I have ever partipated in.
+						During this internship, I designed and implemented a novel in-vehicle infotainment system that could automatically
+						generate 4-D movies using motion-enabled vehicle seats. This system functions as follows: To begin with, it analyzes the
+						movies played on the user’s phone or on the dashboard display. Then, critical moments in the movies are detected,
+						including car crashes, explosions and so on. For each critical scene, the infotainment system assigns a set of seat
+						movements (e.g., shaking or sliding). Finally, control commands are sent to the hardware and the seat completes those
+						movements in real time.
+						
+						The most challenging part in this project is to automatically detect if and when there is a critical scene. Although
+						there are many 4D movies in the theater, most of their physical effects have been designed manually. Also, the datasets
+						for movies are insufficient in labels and descriptions, despite the abundant raw data from different video-sharing
+						platforms. Consequently, I have to develop my own algorithms and gather my own datasets for my specific tasks.
+						Fortunately, current Deep Learning approaches including video understanding, video captioning and video teaser
+						generation are related to my tasks and can be adopted to my specific applications. Since the background music and the
+						video scenery are highly corelated, I decided to first analyze the music and the video separately and then combine the
+						results together, such that I could improve the accuracy in the detection of critical movie segments. To analyze the
+						videos, I broke down the tasks into keyframe extraction, teaser narration generation, keyword clustering and sound event
+						detection. For every second of video segments, 2-4 keyframes were extracted. Then, the objects in the video frames were
+						identified and the main ideas of the video segments were summarized. By applying a clustering algorithm, the
+						dependencies between these segments could be revealed. Finally, a sound event detection model is called to rule out
+						false positive results. For audio signal analysis, I applied a separation model to remove the background music as well
+						as extract sound effects and dialogues. By applying a beat extraction model, both the regular and irregular rhythm
+						patterns of the audio were obtained, providing a rough segmentation of the audios. Lastly, beat extraction algorithm was
+						called again to refine the results for critical events. For each task, one or more deep neural networks have been
+						trained, and I also developed rule-based algorithms to analyze movie transitions and integrate audio and video analysis.
+						With these analysis results, seat motions were assigned and as well as executed, turning a traditional movie into a 4-D
+						movie on the vehicle seat. I further designed a configuration software which allowed the users to define their preferred
+						seat motions. Field tests showed that my system worked as expected, and the company is currently preparing my results
+						for a patent as well as a commercial product.
+						
+						
+						This internship experience is meaningful and impressive for three reasons. First, during the internship, I proposed and
+						implemented novel movie analysis algorithms, which greatly improved my skills and understandings on Deep Learning and
+						related fields. I read countless research papers and support documents during this project, and I could eventually
+						develop my own Deep Learning models and software tools. Second, this is the first time that I complete an industry-level
+						product independently, and I gathered invaluable experiences in analyzing and solving problems. My manager is not an
+						expert in Deep Learning and Multimedia Processing, and he could not provide a detailed road path for this project.
+						However, by dividing this abstract and high-level idea into concrete and low-level subtasks, I managed to conquer them
+						separately and integrate them into a whole system. Third, the product itself is creative as well as useful, convincing
+						me that modern Deep Learning techniques could really benefit our daily life.
 						
 						
 						<br>
